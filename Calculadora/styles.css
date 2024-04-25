@@ -1,0 +1,99 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: calc(100% - 40px);
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+}
+
+button {
+    width: calc(100% - 10px);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.equal {
+    grid-row: span 2;
+    background-color: #4caf50;
+    color: white;
+    font-size: 24px;
+}
+.equal:active {
+    background-color: #388e3c;
+}
+
+.number {
+    background-color: #ddd;
+    color: #333;
+}
+
+.operator, .function {
+    background-color: #f59542;
+    color: white;
+}
+
+.stack {
+    margin-top: 30px;
+}
+
+.stack h3 {
+    text-align: center;
+}
+
+.stack ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stack li {
+    background-color: #fff;
+    border: 1px solid #ff2600;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.clear-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 500px; /* Limitar el ancho máximo del botón */
+    width: 100%; /* Hacer que el botón ocupe el ancho disponible */
+}
+
+.clear-button:hover {
+    background-color: darkred;
+}

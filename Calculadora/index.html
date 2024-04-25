@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button class="function" onclick="clearLast()">←</button>
+            <button class="function" onclick="addToDisplay('(')">(</button>
+            <button class="function" onclick="addToDisplay(')')">)</button>
+            <button class="function" onclick="clearDisplay()">C</button>
+            <button class="function" onclick="addToDisplay('mod')">mod</button>
+            <button class="number" onclick="addToDisplay('7')">7</button>
+            <button class="number" onclick="addToDisplay('8')">8</button>
+            <button class="number" onclick="addToDisplay('9')">9</button>
+            <button class="operator" onclick="addToDisplay('/')">÷</button>
+            <button class="function" onclick="addToDisplay('sqrt(')">√</button>
+            <button class="number" onclick="addToDisplay('4')">4</button>
+            <button class="number" onclick="addToDisplay('5')">5</button>
+            <button class="number" onclick="addToDisplay('6')">6</button>
+            <button class="operator" onclick="addToDisplay('*')">x</button>
+            <button class="function" onclick="addToDisplay('^2')">x²</button>
+            <button class="number" onclick="addToDisplay('1')">1</button>
+            <button class="number" onclick="addToDisplay('2')">2</button>
+            <button class="number" onclick="addToDisplay('3')">3</button>
+            <button class="operator" onclick="addToDisplay('-')">-</button>
+            <button class="equal" onclick="calculate()">=</button>
+            <button class="number" onclick="addToDisplay('0')">0</button>
+            <button class="function" onclick="addToDisplay('.')">,</button>
+            <button class="function" onclick="addToDisplay('pi')">π</button>
+            <button class="operator" onclick="addToDisplay('+')">+</button>
+        </div>
+    </div>
+    <div class="stack">
+        <h3>Operaciones:</h3>
+        <ul id="operations">
+        </ul>
+    </div>
+    <button class="clear-button" onclick="clearStack()">Limpiar Pila</button>
+    <script src="script.js"></script>
+</body>
+</html>
