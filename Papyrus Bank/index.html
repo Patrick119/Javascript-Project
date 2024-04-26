@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Papyrus Bank - Inicio de Sesión</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="Pictures/papyrus.png" alt="Logo de Papyrus Bank">
+    <h1>Papyrus Bank</h1>
+</header>
+
+<main>
+    <div class="secure-zone">
+        <img src="Pictures/lock.png" alt="Candado">
+        <p>Usted se encuentra en una zona segura</p>
+    </div>
+
+    <div class="login-form">
+        <select id="account-type">
+            <option value="global-debit">Multired Global Débito</option>
+            <option value="dni">DNI (Cuenta corriente)</option>
+        </select>
+
+        <input type="text" id="card-number" placeholder="Número de Tarjeta (16 dígitos)">
+        <input type="text" id="dni" placeholder="DNI (8 dígitos)">
+
+        <div class="virtual-keyboard">
+            <!-- Aquí se generará el teclado virtual con JavaScript -->
+        </div>
+      
+        <button id="generate-password">Generar tu Clave de Internet</button>
+        <input type="password" id="password" placeholder="Ingresa tu Clave de Internet (6 dígitos)" maxlength="6">
+
+        <img src="captcha1.png" alt="Captcha" id="captcha">
+        <input type="text" id="captcha-input" placeholder="Ingrese el Captcha">
+        <button id="change-captcha">Cambiar texto</button>
+
+        <button id="submit-btn">Iniciar Sesión</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Papyrus Bank. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
